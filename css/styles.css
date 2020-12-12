@@ -1,0 +1,112 @@
+:root{
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --font-family: "Kumbh Sans",sans-serif;
+    --font-weight-1:400;
+    --font-weight-2:700;
+    --font-size:18px;
+}
+*{
+    margin:0;
+    padding:0;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--very-dark-desaturated-blue);
+    background-color: var(--dark-cyan);
+    background-image: url('/images/bg-pattern-top.svg'), url('/images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    background-position:  bottom -50vh right 48vw, top 50vh left 48vw;
+}
+.container{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+   
+}
+.card{
+    width:335px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.25);
+    background-image: url('/images/bg-pattern-card.svg');
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+display:flex;
+flex-direction: column;
+}
+
+.profile__img{
+    /*position: relative;
+    top:20%;
+    left:35%;*/
+    margin-top:80px;
+    margin-left:115px;
+}
+.profile__img-src{
+    border-radius: 50%;
+    border:5px solid white;
+    
+}
+.profile__details-name{
+    display: flex;
+    align-items: center;
+}
+.profile__details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top:15px;
+    margin-bottom:15px;
+}
+.profile__data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:20px;
+    border-top: 0.5px solid rgba(44, 44, 44, 0.096);
+}
+.profile__followers{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+.profile__age{
+    font-weight: var(--font-weight-1);
+    color: var(--dark-grayish-blue);
+    padding-left:5px;
+}
+.profile__name{
+    font-weight: var(--font-weight-2);
+}
+.profile__city{
+    padding-top:10px;
+    font-weight: var(--font-weight-1);
+    font-size: 13px;
+    color: var(--dark-grayish-blue);
+}
+.profile__followers--count{
+    font-weight: var(--font-weight-2);
+}
+.profile__followers--text{
+    font-weight: var(--font-weight-1);
+    font-size: 10px;
+    color: var(--dark-grayish-blue);
+    letter-spacing: 1.3px;
+}
+
